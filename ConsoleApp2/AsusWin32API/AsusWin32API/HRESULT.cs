@@ -1,0 +1,23 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AsusWin32API.HRESULT
+// Assembly: AsusWin32API, Version=2.1.0.3, Culture=neutral, PublicKeyToken=null
+// MVID: FF5A172A-B9F1-40B4-A5E7-ECA21938E9F1
+// Assembly location: C:\Program Files (x86)\ASUSTeK COMPUTER INC\ROG Gaming Center\AsusWin32API.dll
+
+namespace AsusWin32API
+{
+  public enum HRESULT : uint
+  {
+    S_OK = 0,
+    E_NOTIMPL = 2147500033, // 0x80004001
+    E_NOINTERFACE = 2147500034, // 0x80004002
+    E_POINTER = 2147500035, // 0x80004003
+    E_ABORT = 2147500036, // 0x80004004
+    E_FAIL = 2147500037, // 0x80004005
+    E_UNEXPECTED = 2147549183, // 0x8000FFFF
+    E_ACCESSDENIED = 2147942405, // 0x80070005
+    E_HANDLE = 2147942406, // 0x80070006
+    E_OUTOFMEMORY = 2147942414, // 0x8007000E
+    E_INVALIDARG = 2147942487, // 0x80070057
+  }
+}

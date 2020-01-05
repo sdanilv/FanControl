@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BDF4E4F-BF77-4245-AC59-C6DAA830A7CE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp2</RootNamespace>
+    <AssemblyName>ConsoleApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>AsusWin32API\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>AsusWin32API\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsusWin32API\ACCESS_MASK.cs" />
+    <Compile Include="AsusWin32API\ACLineStatus.cs" />
+    <Compile Include="AsusWin32API\ActivateOptions.cs" />
+    <Compile Include="AsusWin32API\Advapi32.cs" />
+    <Compile Include="AsusWin32API\AGFN_BUFFER.cs" />
+    <Compile Include="AsusWin32API\AGFN_HDR.cs" />
+    <Compile Include="AsusWin32API\ApplicationActivationManager.cs" />
+    <Compile Include="AsusWin32API\ATKGFNEXSRV_ERR.cs" />
+    <Compile Include="AsusWin32API\ATKHelper.cs" />
+    <Compile Include="AsusWin32API\ATKLib.cs" />
+    <Compile Include="AsusWin32API\BatteryFlag.cs" />
+    <Compile Include="AsusWin32API\CHANGEFILTERSTRUCT.cs" />
+    <Compile Include="AsusWin32API\ChangeWindowMessageFilterExAction.cs" />
+    <Compile Include="AsusWin32API\FunContol.cs" />
+    <Compile Include="AsusWin32API\CLSCTX.cs" />
+    <Compile Include="AsusWin32API\CoInit.cs" />
+    <Compile Include="AsusWin32API\CopyDataStruct.cs" />
+    <Compile Include="AsusWin32API\CopyStringStruct.cs" />
+    <Compile Include="AsusWin32API\CreateProcessFlags.cs" />
+    <Compile Include="AsusWin32API\DEVPKEY_Device.cs" />
+    <Compile Include="AsusWin32API\DEVPROPKEY.cs" />
+    <Compile Include="AsusWin32API\DEV_BROADCAST_DEVICEINTERFACE.cs" />
+    <Compile Include="AsusWin32API\DEV_BROADCAST_HDR.cs" />
+    <Compile Include="AsusWin32API\DIFxAPI.cs" />
+    <Compile Include="AsusWin32API\DiGetClassFlags.cs" />
+    <Compile Include="AsusWin32API\DOCKING_STATUS.cs" />
+    <Compile Include="AsusWin32API\DOUBLE_POWER_STATUS.cs" />
+    <Compile Include="AsusWin32API\ECreationDisposition.cs" />
+    <Compile Include="AsusWin32API\ErrorHelper.cs" />
+    <Compile Include="AsusWin32API\GFNEX.cs" />
+    <Compile Include="AsusWin32API\GlobalVariable.cs" />
+    <Compile Include="AsusWin32API\HKEY.cs" />
+    <Compile Include="AsusWin32API\HRESULT.cs" />
+    <Compile Include="AsusWin32API\IApplicationActivationManager.cs" />
+    <Compile Include="AsusWin32API\IPersistFile.cs" />
+    <Compile Include="AsusWin32API\IPropertyStore.cs" />
+    <Compile Include="AsusWin32API\IShellLinkW.cs" />
+    <Compile Include="AsusWin32API\Kernel32.cs" />
+    <Compile Include="AsusWin32API\LoadLibraryFlags.cs" />
+    <Compile Include="AsusWin32API\Logger.cs" />
+    <Compile Include="AsusWin32API\LoggerObject.cs" />
+    <Compile Include="AsusWin32API\LogType.cs" />
+    <Compile Include="AsusWin32API\LogWriter`1.cs" />
+    <Compile Include="AsusWin32API\LUID.cs" />
+    <Compile Include="AsusWin32API\LUID_AND_ATTRIBUTES.cs" />
+    <Compile Include="AsusWin32API\MEMORYSTATUSEX.cs" />
+    <Compile Include="AsusWin32API\MessageFilterInfo.cs" />
+    <Compile Include="AsusWin32API\MINMAXINFO.cs" />
+    <Compile Include="AsusWin32API\MONITORINFO.cs" />
+    <Compile Include="AsusWin32API\Ole32.cs" />
+    <Compile Include="AsusWin32API\PACKAGE_ID.cs" />
+    <Compile Include="AsusWin32API\PACKAGE_INFO.cs" />
+    <Compile Include="AsusWin32API\POINT.cs" />
+    <Compile Include="AsusWin32API\POWERBROADCAST_SETTING.cs" />
+    <Compile Include="AsusWin32API\ProcessAccess.cs" />
+    <Compile Include="AsusWin32API\PROCESSENTRY32.cs" />
+    <Compile Include="AsusWin32API\PROCESS_INFORMATION.cs" />
+    <Compile Include="AsusWin32API\RECT.cs" />
+    <Compile Include="AsusWin32API\REGNOTIFYCHANGEFILTER.cs" />
+    <Compile Include="AsusWin32API\RT.cs" />
+    <Compile Include="AsusWin32API\ScmAccessRights.cs" />
+    <Compile Include="AsusWin32API\SC_ACTION.cs" />
+    <Compile Include="AsusWin32API\SC_ACTION_TYPE.cs" />
+    <Compile Include="AsusWin32API\Secur32.cs" />
+    <Compile Include="AsusWin32API\SECURITY_ATTRIBUTES.cs" />
+    <Compile Include="AsusWin32API\SECURITY_IMPERSONATION_LEVEL.cs" />
+    <Compile Include="AsusWin32API\SendMessageTimeoutFlags.cs" />
+    <Compile Include="AsusWin32API\ServiceAccessRights.cs" />
+    <Compile Include="AsusWin32API\ServiceBootFlag.cs" />
+    <Compile Include="AsusWin32API\ServiceControl.cs" />
+    <Compile Include="AsusWin32API\ServiceError.cs" />
+    <Compile Include="AsusWin32API\ServiceState.cs" />
+    <Compile Include="AsusWin32API\SERVICE_FAILURE_ACTIONS.cs" />
+    <Compile Include="AsusWin32API\SERVICE_STATUS.cs" />
+    <Compile Include="AsusWin32API\Setupapi.cs" />
+    <Compile Include="AsusWin32API\ShellIIDGuid.cs" />
+    <Compile Include="AsusWin32API\Shlwapi.cs" />
+    <Compile Include="AsusWin32API\SidIdentifierAuthority.cs" />
+    <Compile Include="AsusWin32API\SID_NAME_USE.cs" />
+    <Compile Include="AsusWin32API\SnapshotFlags.cs" />
+    <Compile Include="AsusWin32API\SP_DEVINFO_DATA.cs" />
+    <Compile Include="AsusWin32API\STARTUPINFO.cs" />
+    <Compile Include="AsusWin32API\STGM.cs" />
+    <Compile Include="AsusWin32API\SupportATKFunc.cs" />
+    <Compile Include="AsusWin32API\SystemPowerStatus.cs" />
+    <Compile Include="AsusWin32API\SYSTEMTIME.cs" />
+    <Compile Include="AsusWin32API\TaskSchedulerConfigure.cs" />
+    <Compile Include="AsusWin32API\ATemper.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\IAction.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\IActionCollection.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\IExecAction.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\IIdleSettings.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\IImpAGFNEx.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\ILogonTrigger.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\IPrincipal.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\IRegisteredTask.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\IRegistrationInfo.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\ITaskDefinition.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\ITaskFolder.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\ITaskService.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\ITaskSettings.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\ITrigger.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\ITriggerCollection.cs" />
+    <Compile Include="AsusWin32API\TaskScheduler\TaskSchedulerClass.cs" />
+    <Compile Include="AsusWin32API\TASK_ACTION_TYPE.cs" />
+    <Compile Include="AsusWin32API\TASK_CREATION.cs" />
+    <Compile Include="AsusWin32API\TASK_INSTANCES_POLICY.cs" />
+    <Compile Include="AsusWin32API\TASK_LOGON_TYPE.cs" />
+    <Compile Include="AsusWin32API\TASK_RUNLEVEL_TYPE.cs" />
+    <Compile Include="AsusWin32API\TASK_TRIGGER_TYPE2.cs" />
+    <Compile Include="AsusWin32API\TOKEN_INFORMATION_CLASS.cs" />
+    <Compile Include="AsusWin32API\TOKEN_TYPE.cs" />
+    <Compile Include="AsusWin32API\TokPriv1Luid.cs" />
+    <Compile Include="AsusWin32API\User32.cs" />
+    <Compile Include="AsusWin32API\Userenv.cs" />
+    <Compile Include="AsusWin32API\VARIANT.cs" />
+    <Compile Include="AsusWin32API\VT.cs" />
+    <Compile Include="AsusWin32API\WINDOWINFO.cs" />
+    <Compile Include="AsusWin32API\WinInterface.cs" />
+    <Compile Include="AsusWin32API\Wtsapi32.cs" />
+    <Compile Include="AsusWin32API\WTSSESSION_NOTIFICATION.cs" />
+    <Compile Include="AsusWin32API\WTS_CONNECTSTATE_CLASS.cs" />
+    <Compile Include="AsusWin32API\WTS_INFO_CLASS.cs" />
+    <Compile Include="AsusWin32API\WTS_SESSION_INFO.cs" />
+    <Compile Include="ATKHelper.cs" />
+    <Compile Include="ConsoleManager.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Temperature\Hardware.cs" />
+    <Compile Include="Temperature\IControl.cs" />
+    <Compile Include="Temperature\Identifier.cs" />
+    <Compile Include="Temperature\IElement.cs" />
+    <Compile Include="Temperature\IHardware.cs" />
+    <Compile Include="Temperature\IParameter.cs" />
+    <Compile Include="Temperature\IReadOnlyArray.cs" />
+    <Compile Include="Temperature\ISensor.cs" />
+    <Compile Include="Temperature\IVisitor.cs" />
+    <Compile Include="Temperature\ListSet.cs" />
+    <Compile Include="Temperature\NVAPI.cs" />
+    <Compile Include="Temperature\NvidiaGPU.cs" />
+    <Compile Include="Temperature\NvidiaGroup.cs" />
+    <Compile Include="Temperature\Pair.cs" />
+    <Compile Include="Temperature\Parameter.cs" />
+    <Compile Include="Temperature\PInvokeDelegateFactory.cs" />
+    <Compile Include="Temperature\Program.cs" />
+    <Compile Include="Temperature\ReadOnlyArray.cs" />
+    <Compile Include="Temperature\RingCollection.cs" />
+    <Compile Include="Temperature\Sensor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
